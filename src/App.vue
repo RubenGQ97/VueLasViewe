@@ -1,26 +1,52 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class=" container-fluid">
+    <div class=" row">
+      <div class="p-0  d-flex flex-column justify-content-center border-left border-3 sidebar col-3 ">
+          <div class=" ">
+            <h1 class=" text-center title-style mt-auto">LasViewer</h1>
+            <h2 class="text-center subtitle-style">VueJs</h2>
+          </div>
+      </div>
+      <div class=" p-0 col-9">
+        <LasViewer />
+      </div>
+    </div>
+  </div>
 </template>
 
+
+<style>
+.sidebar{
+  background: rgb(255, 255, 255);
+}
+
+.title-style {
+    color: #49a800;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.subtitle-style {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+    padding-bottom: 40px;
+}
+</style>
+
+
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LasViewer from './components/LasViewer.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    LasViewer,
+  },
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
