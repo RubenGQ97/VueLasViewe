@@ -43,8 +43,23 @@
 <script>
 import LasViewer from './components/LasViewer.vue';
 
+//import LasLoader from './utils/LasLoader'
+
 export default {
   name: 'App',
+  /*provide(){
+    return{
+      data :{
+              value: this.initData()
+      }
+    }
+  },
+  methods:{
+    async initData(){
+        const datos = LasLoader()
+        return datos
+    }
+  },*/
   components: {
     LasViewer,
   },
